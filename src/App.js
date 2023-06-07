@@ -1,18 +1,17 @@
-import React from 'react';
-import { Main } from './Components/Main';
-import './Components/style.css';
-import {Routes,Route} from 'react-router-dom'
-import { Marvel } from './Components/Marvel';
+import './assets/css/App.css';
+import NavBar from './components/NavBar';
+import WeatherPanel from './components/WeatherPanel';
+
 
 function App() {
   return (
-    <>
-     <Routes>
-       <Route path='/'element={<Main/>}/>
-       <Route path='/:id' element={<Marvel/>}/>
-     </Routes>
-    </>
-  )
+    <div className="App">
+
+      <NavBar />
+      <WeatherPanel />
+
+    </div>
+  );
 }
 
 export default App;
